@@ -3,7 +3,7 @@
 ### Jean-Michel Bouchard
 
 - Assumptions
-    - Most important assumption, out of the multiple clients, none of them will start a transaction at the same time. While they're free to start a transaction, rollback a transaction or commit an existing transaction, implementing multi client / multi transactional system would require some kind of concurrency control (OCC, PCC, MVCC) which are in my opinion out of scope of this exercise. If they are wanted **OR** needed, I made sure that the KeyValueStore is an interface that can be re-implemented to make it easy to switch in or out.
+    - Most important assumption, out of the multiple clients, none of them will start a transaction at the same time. While they're free to start a transaction, rollback a transaction or commit an existing transaction, implementing a multi client / multi transactional (but synchronized globally). I made sure that the KeyValueStore is an interface that can be re-implemented to make it easy to switch in or out.
     - Used a TCP socket server in order to guarantee transmission of data / de-duplication just to make our lives easier.
     - Currently the default max number of clients is 5 as implemented in the TCP Server class, but can be modified if necessary.
     - Added an "EXIT"/"exit" (basically any combination that can be lowercased to "exit") command to close the connection gracefully. Can always CTRL-C on a connection but it seemed out of scope to handle that gracefully without an exception on the server side.
