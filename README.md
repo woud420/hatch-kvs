@@ -28,7 +28,7 @@
         - `make venv` to make the virtual environment
         - `make tests` to run tests
         - `make run` to start the server
-        - `nc 0.0.0.0 5555` to connect one client to the server. If you want multiple clients, just start more processes.
+        - `nc 0.0.0.0 4000` to connect one client to the server. If you want multiple clients, just start more processes.
 
 - Notes
     - Yes, ChatGPT was leveraged to write the tests (of course I validated), if a tool exists, why not use it to speed up the process... just smart engineering in my opinion.
