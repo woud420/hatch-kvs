@@ -8,7 +8,7 @@
     - Currently the default max number of clients is 5 as implemented in the TCP Server class, but can be modified if necessary.
     - Added an "EXIT"/"exit" (basically any combination that can be lowercased to "exit") command to close the connection gracefully. Can always CTRL-C on a connection but it seemed out of scope to handle that gracefully without an exception on the server side.
     - Added some basic logs just to show that multiple clients connect on different ports.
-    - Serving traffic on port 5555 (just a random choice) by default.
+    - Serving traffic on port 4000 by default.
 
 - Code Structure
     - src -> source code of the program
