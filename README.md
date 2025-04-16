@@ -1,4 +1,4 @@
-# Haus Take Home Exercise
+# Hatch Take Home Exercise
 ## Multi client In Memory Datastore Server
 ### Jean-Michel Bouchard
 
